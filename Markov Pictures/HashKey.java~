@@ -1,0 +1,16 @@
+public class HashKey{
+	
+	public Pixel down;
+	public Pixel right;
+	
+	public HashKey(Pixel p1, Pixel p2){
+		down = p1;
+		right = p2;
+	}
+	
+	public int hashCode(){
+		return down.hashCode() * right.hashCode();
+	}
+	
+	
+}
